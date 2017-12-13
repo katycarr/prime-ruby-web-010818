@@ -1,5 +1,8 @@
 # Add  code here!
 def prime?(num)
+  if num < 0
+    num = -num
+  end
   array = create_array(num)
   prime = true
   array.each do |factor|
