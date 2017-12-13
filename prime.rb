@@ -1,11 +1,14 @@
 # Add  code here!
 def prime?(num)
   array = create_array(num)
+  prime = true
   array.each do |factor|
     if num % factor == 0
-      "Divisible by #{factor}"
+      prime = false
     end
+    prime
   end
+  prime
 end
 
 
