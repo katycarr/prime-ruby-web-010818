@@ -2,7 +2,9 @@
 def prime?(num)
   array = create_array(num)
   array.each do |factor|
-    rem
+    if num % factor == 0
+      "Divisible by #{factor}"
+    end
   end
 end
 
